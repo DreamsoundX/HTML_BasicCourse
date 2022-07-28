@@ -6,90 +6,107 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="info">
-      <img class="avatar" src="img/avatar.jpg" alt="avatar" />
-      <h1>Тимур Эллисон</h1>
-      <p>Я начинающий <strong>Front-end разработчик</strong></p>
-      <p>Я люблю программировать и заниматься музыкой</p>
+    <div class="container">
+      <div class="info">
+        <img class="avatar" src="img/avatar.jpg" alt="avatar" />
+
+        <div class="info-text">
+          <h1>Тимур Эллисон</h1>
+          <p>Я начинающий <strong>Front-end разработчик</strong></p>
+          <p>Я люблю программировать и заниматься музыкой</p>
+
+          <h4>Мои социальные сети</h4>
+          <a target="_blank" href="https://vk.com/id106787756">Vk</a>
+          |
+          <a target="_blank" href="https://t.me/DreamsoundX">Telegram</a>
+        </div>
+      </div>
+
+      <div class="card bg-yellow">
+        <h2>Мои хобби</h2>
+        <ol class="list">
+          <li>Музыка</li>
+          <li>Спорт</li>
+          <li>Путешествия</li>
+        </ol>
+      </div>
+
+      <div class="card bg-green">
+        <h2>Образование</h2>
+        <table class="table">
+          <tr>
+            <td>Гимназия №2</td>
+            <td>Школьник</td>
+            <td>some years</td>
+          </tr>
+          <tr>
+            <td>РГРТУ</td>
+            <td>Студент</td>
+            <td>some years</td>
+          </tr>
+          <tr>
+            <td>Дом</td>
+            <td>Самообразование</td>
+            <td>2021-now</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="card bg-red">
+        <h2>Мои курсы</h2>
+        <ul class="link-list">
+          <li>
+            <a
+              href="https://uc1.1c.ru/course/professionalnyj-razrabotchik-1s-2022/"
+              >Профессиональный разработчик 1С</a
+            >
+          </li>
+          <li><a href="https://www.epam.com/">Epam.JavaScript</a></li>
+        </ul>
+      </div>
+
+      <div class="contact">
+        <h2>Связаться со мной</h2>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Ваше имя:</label>
+              <input
+                tabindex="1"
+                type="text"
+                id="name"
+                name="username"
+                placeholder="Введите ваше имя..."
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Ваш e-mail:</label>
+              <input
+                tabindex="2"
+                type="email"
+                id="email"
+                name="usermale"
+                placeholder="Введите ваш e-mail..."
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="text">Ваше сообщение:</label>
+            <textarea tabindex="3" id="text" rows="2" cols="15"></textarea>
+          </div>
+
+          <input class="btn" tabindex="4" type="submit" value="Связаться!" />
+        </form>
+      </div>
+
+      <div class="position">
+        <div class="box"></div>
+      </div>
     </div>
 
-    <hr />
-
-    <h2>Мои социальные сети</h2>
-    <ul>
-      <li><a target="_blank" href="https://vk.com/id106787756">Vk</a></li>
-      <li><a target="_blank" href="https://t.me/DreamsoundX">Telegram</a></li>
-    </ul>
-
-    <hr />
-
-    <h2>Мои хобби</h2>
-    <ol>
-      <li>Музыка</li>
-      <li>Спорт</li>
-      <li>Путешествия</li>
-    </ol>
-
-    <hr />
-
-    <h2>Образование</h2>
-    <table>
-      <tr>
-        <th>Место учебы</th>
-        <th>Статус</th>
-        <th>Годы</th>
-      </tr>
-      <tr>
-        <td>Гимназия №2</td>
-        <td>Школьник</td>
-        <td>some years</td>
-      </tr>
-      <tr>
-        <td>РГРТУ</td>
-        <td>Студент</td>
-        <td>some years</td>
-      </tr>
-    </table>
-
-    <hr />
-
-    <h2>Мои курсы</h2>
-    <a href="courses.html">Посмотреть список</a>
-
-    <hr />
-
-    <h2>Связаться со мной</h2>
-
-    <form action="#" method="post" enctype="multipart/form-data">
-      <label for="name">Ваше имя</label>
-      <input
-        tabindex="1"
-        type="text"
-        id="name"
-        placeholder="Введите ваше имя..."
-      />
-
-      <br />
-
-      <label for="email">Ваш Email</label>
-      <input
-        tabindex="2"
-        type="email"
-        id="email"
-        placeholder="Введите ваш e-mail..."
-      />
-
-      <br />
-
-      <label for="text">Ваше сообщение</label>
-
-      <br />
-
-      <textarea tabindex="3" id="text" rows="2" cols="15"></textarea>
-
-      <br />
-
-      <input tabindex="4" type="submit" value="Связаться!" />
-    </form>
+    <div style="margin-bottom: 500px"></div>
   </body>
 </html>
